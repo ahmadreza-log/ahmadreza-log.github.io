@@ -2,6 +2,7 @@ import path from 'path'
 import fs from 'fs'
 
 const directories = source => {
+	const name = source
 	source = path.join( process.cwd(), 'app/' + source )
 
 	const folders = fs.readdirSync( source ).filter( name => {
@@ -19,7 +20,7 @@ const directories = source => {
 		const metadata = JSON.parse( fs.readFileSync( file, 'utf-8' ) )
 
 		list.push( {
-			path: `${ source.split( '\\' ).at( -1 ) }/${ folder }`,
+			path: `/${name}/${ folder }`,
 			...metadata,
 		} )
 	}

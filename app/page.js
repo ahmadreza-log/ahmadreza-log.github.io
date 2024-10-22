@@ -7,6 +7,8 @@ export default async function Page() {
 	directories( 'codes' ).map( item => items.push( item ) )
 	directories( 'tools' ).map( item => items.push( item ) )
 
+	console.log( items )
+
 	return <div className={ 'container' }>
 		<div className={ 'grid grid-cols-3' }>
 			{ items.map( ( item, index ) => <div key={ index }>
