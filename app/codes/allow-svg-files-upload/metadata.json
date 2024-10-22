@@ -1,0 +1,9 @@
+{
+  "title": "Allow SVG Files Upload",
+  "description": "Add support for SVG files to be uploaded in WordPress media.",
+  "categories": [
+    "Code",
+    "PHP",
+    "Wordpress"
+  ]
+}
