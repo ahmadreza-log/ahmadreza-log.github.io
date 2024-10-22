@@ -19,7 +19,7 @@ export default function Breadcrumb() {
 				{
 					paths.map( ( link, index ) => {
 						let href = `/${ paths.slice( 0, index + 1 ).join( '/' ) }`,
-							item = link[0].toUpperCase() + link.slice( 1, link.length )
+							item = link[0].toUpperCase() + link.slice( 1, link.length ).replaceAll( '-', ' ' )
 
 						return <li key={ index }>
 							<Link href={ href } className={ usePathname() === href ? `text-sky-400` : '' }>{ item }</Link>
