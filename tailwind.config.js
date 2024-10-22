@@ -7,9 +7,14 @@ module.exports = {
 	],
 	theme:   {
 		container: {
-			center: true,
+			center:  true,
+			padding: '2rem',
 		},
-		extend:    {},
+		extend:    {
+			highlight: {
+				white: 'inset 0 1px 0 0 #ffffff0d',
+			},
+		},
 	},
 	plugins: [],
 }

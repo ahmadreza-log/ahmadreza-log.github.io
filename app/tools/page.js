@@ -4,7 +4,6 @@ import Card from '@/components/card'
 
 export default async function Page() {
 	const items = []
-	directories( 'codes' ).map( item => items.push( item ) )
 	directories( 'tools' ).map( item => items.push( item ) )
 
 	return <div className={ 'container' }>

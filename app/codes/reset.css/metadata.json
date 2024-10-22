@@ -1,0 +1,8 @@
+{
+  "title": "Reset.css",
+  "description": "A reset stylesheet (or CSS reset) is a collection of CSS rules used to clear the browser's default formatting of HTML elements, removing potential inconsistencies between different browsers. It also prevents developers from unknowingly relying on the browser default styling and force them to be explicit about the styling they want to apply on the page.",
+  "categories": [
+    "Code",
+    "CSS"
+  ]
+}

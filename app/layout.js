@@ -19,7 +19,7 @@ export default function RootLayout( { children } ) {
 		<html lang="en">
 			<body className={ 'bg-slate-900 text-white ' + poppins.className }>
 				<Header />
-				{ children }
+				<div className={ 'mb-12' }>{ children }</div>
 			</body>
 		</html>
 	)

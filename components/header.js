@@ -5,7 +5,7 @@ export default async function Header() {
 	let response = await data.json()
 
 	return (
-		<header className={ 'sticky top-0 backdrop-blur bg-transparent border-b border-slate-100/10 py-4' }>
+		<header className={ 'sticky top-0 mb-12 backdrop-blur bg-transparent border-b border-slate-100/10 py-4' }>
 			<div className={ 'container' }>
 
 				<div className={ 'flex justify-between items-center' }>
@@ -15,7 +15,7 @@ export default async function Header() {
 							<Image src={ response.avatar_url } alt={ response.name } width={ 48 } height={ 48 } className={ 'rounded-full' } />
 						</Link>
 						<Link href={ '/' }>
-							<h1 className={ 'text-white text-xl font-medium' }>{ response.name }</h1>
+							<h1 className={ 'text-white text-xl font-medium my-0' }>{ response.name }</h1>
 							<sub className={ 'text-white/70 font-light' }>{ response.bio }</sub>
 						</Link>
 					</div>
@@ -28,8 +28,8 @@ export default async function Header() {
 								</Link>
 							</li>
 							<li>
-								<Link href={ '/code' } className={ 'hover:text-sky-400' }>
-									Code Snippets
+								<Link href={ '/codes' } className={ 'hover:text-sky-400' }>
+									Codes
 								</Link>
 							</li>
 						</ul>
