@@ -19,7 +19,7 @@ const directories = source => {
 		const metadata = JSON.parse( fs.readFileSync( file, 'utf-8' ) )
 
 		list.push( {
-			path: `/${ source.split( '\\' ).at( -1 ) }/${ folder }`,
+			path: `${ source.split( '\\' ).at( -1 ) }/${ folder }`,
 			...metadata,
 		} )
 	}

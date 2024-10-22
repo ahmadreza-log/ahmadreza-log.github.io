@@ -9,7 +9,7 @@ export default async function Card( { path, title, categories, description } ) {
 					{ title.split( '' ).at( 0 ) }
 				</div>
 				<div>
-					<h2 className={ 'text-slate-300' }>{ title }</h2>
+					<h2 className={ 'text-slate-300 my-0' }>{ title }</h2>
 					<span className={ 'text-slate-500 text-sm font-medium' }>{ categories.join( ', ' ) }</span>
 				</div>
 			</div>
