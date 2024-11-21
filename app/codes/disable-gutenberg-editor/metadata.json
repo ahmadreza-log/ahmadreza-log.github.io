@@ -1,0 +1,9 @@
+{
+  "title": "Disable Gutenberg Editor",
+  "description": "Switch back to the Classic Editor by disabling the Block Editor.",
+  "categories": [
+    "Code",
+    "PHP",
+    "Wordpress"
+  ]
+}

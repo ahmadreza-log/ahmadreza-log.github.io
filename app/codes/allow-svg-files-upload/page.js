@@ -5,9 +5,9 @@ export const metadata = {
 	title:       'Allow SVG Files Upload',
 	description: 'Add support for SVG files to be uploaded in WordPress media.',
 }
-export default function Page() {
-	return <Content title={ 'Allow SVG Files Upload' }>
-		<p>Add support for SVG files to be uploaded in WordPress media.</p>
+export default async function Page() {
+	return <Content title={ metadata.title }>
+		<p>{ metadata.description }</p>
 		<Code language={ 'php' }>
 			{ `<?php 
 /**

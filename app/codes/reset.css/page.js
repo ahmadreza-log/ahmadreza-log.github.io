@@ -8,12 +8,8 @@ export const metadata = {
 export default function Page() {
 	return (
 		<Content title={ metadata.title }>
-			<p>A reset stylesheet (or CSS reset) is a collection of CSS rules used to clear the browser's default
-			   formatting of HTML elements, removing potential inconsistencies between different browsers. It also
-			   prevents developers from unknowingly relying on the browser default styling and force them to be explicit
-			   about the styling they want to apply on the page.</p>
+			<p>{ metadata.description }</p>
 			<p>Here is Some Reset.css files</p>
-
 			<h3>Yahoo CSS Reset</h3>
 			<Code language={ 'css' }>{ `/* 
 Yahoo! CSS Reset (YUI 2)
@@ -55,7 +51,7 @@ abbr, acronym {
 }` }</Code>
 
 			<h3>Eric Meyer’s CSS Reset</h3>
-			<Code language={ 'css' }>{`/* 
+			<Code language={ 'css' }>{ `/* 
 Eric Meyer's CSS Reset
 http://meyerweb.com/eric/tools/css/reset/
 v1.0 | 20080212
@@ -110,7 +106,7 @@ del {
 table {
     border-collapse: collapse;
     border-spacing: 0;
-}`}</Code>
+}` }</Code>
 
 			<h3>Tripoli CSS Reset</h3>
 			<Code language={ 'css' }>{ `/* 
